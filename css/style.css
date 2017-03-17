@@ -1,7 +1,11 @@
+body {
+  font-family:Raleway;
+}
+
 section {
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: white;
   color: black;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,6 +13,10 @@ section {
 section:nth-of-type(1) {
   background-image: url("../img/bed.jpeg");
   position: relative;
+}
+section:nth-of-type(3) {
+  /*Zo komt de video beter uit. samen de de text eronder geen overlap*/
+  height: auto;
 }
 
 .logo {
@@ -30,19 +38,46 @@ section:nth-of-type(1) {
 }
 
 /*dit kan ook zonder deze class kan met :nth-of-type*/
-.hulp{}
-.werking{}
-.functie{}
+.hulp {
 
-/*deze class nodig?*/
-.video video {
+}
+.werking {
+
+}
+.functie {
+
+}
+
+
+video {
   width: 100%;
   height: auto;
   background-color: blue;
   color: white;
 }
 
-.sketchfab-embed-wrapper, .sketchfab-embed-wrapper iframe  {
+section:nth-of-type(4) {
+  height: auto;
+}
+
+section:nth-of-type(4) h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 7px 0 ;
+}
+
+section:nth-of-type(4) article {
+  width: 100%;
+  height: 125px;
+  background-color: #BBDFF5;
+  margin: 5px 0;
+  font-size: 100px;
+  line-height: 125px;
+  color: white;
+  position: relative;
+}
+
+.brabbel, .brabbel iframe  {
   width: 100%;
   height: 100%;
 }
@@ -52,21 +87,25 @@ section:nth-of-type(1) {
 @-webkit-keyframes breathing {
   0% {
     -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
 
   25% {
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
 
   60% {
     -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
 
   100% {
     -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
 }
