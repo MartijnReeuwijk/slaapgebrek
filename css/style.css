@@ -82,6 +82,68 @@ section:nth-of-type(4) article {
   height: 100%;
 }
 
+.scrollers {
+  overflow: hidden;
+}
+section:nth-of-type(6) {
+  position: relative;
+  width: 200vw;
+  overflow: hidden;
+}
+/* scroll overflow right */
+
+section:nth-of-type(6) article {
+  width: 400px;
+  height: 400px;
+  background-image: url("http://www.homease.nl/wp-content/uploads/slaapkamer-mother-goose-hotel-2.jpg");
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  bottom: 3%;
+  left: 3%;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+section:nth-of-type(6) article:nth-last-of-type(1) {
+  width: 300px;
+  height: 300px;
+  background-image: url("http://www.interieurdesigner.be/frontend/files/userfiles/images/inspiratie/slaapkamers/7-modern-tweepersoonsbed.jpg");
+  top: 20%;
+  right: 0%;
+  bottom: 0%;
+  left: 30%;
+}
+
+section:nth-of-type(6) article:nth-last-of-type(2) {
+  width: 200px;
+  height: 200px;
+  background-image: url("http://www.weyne.be/wp-content/uploads/2013/05/nol-col-santara-grijs.jpg");
+  top: 60%;
+  right: 0%;
+  bottom: 0%;
+  left: 50%;
+}
+
+section:nth-of-type(6) article:nth-last-of-type(3) {
+  width: 500px;
+  height: 500px;
+  background-image: url("https://www.haco.nu/media/gallery/cache/7b8fef0172c2eb72dd8fd366c999954c/4/6/4612_am864_g003_penzberg_paco_sfeer.jpg");
+  top: 5%;
+  right: 0%;
+  bottom: 0%;
+  left: 60%;
+}
+section:nth-of-type(6) article div{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+}
 
 /*animation*/
 @-webkit-keyframes breathing {
