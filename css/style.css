@@ -71,10 +71,40 @@ section:nth-of-type(4) article {
   height: 125px;
   background-color: #BBDFF5;
   margin: 5px 0;
+
+  position: relative;
+}
+
+section:nth-of-type(4) article p{
+  font-size: 18px;
+  color: #858585;
+  float: left;
+  max-width: 45%;
+  /*margin: 10px;*/
+
+  /*center the tekst*/
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+section:nth-of-type(4) article p:nth-of-type(3){
   font-size: 100px;
   line-height: 125px;
   color: white;
-  position: relative;
+  margin: 0;
+}
+section:nth-of-type(4) article p:nth-of-type(3)::first-letter{
+  background-color: #8fcaee;
+  font-size: 105px;
+  line-height: 125px;
+}
+section:nth-of-type(4) article p:first-of-type{
+  font-size: 100px;
+  line-height: 125px;
+  color: white;
+  margin: 0;
 }
 
 .brabbel, .brabbel iframe  {
@@ -83,11 +113,12 @@ section:nth-of-type(4) article {
 }
 
 .scrollers {
-  overflow: hidden;
+  overflow: auto;
+  overflow-y: hidden;
 }
+
 section:nth-of-type(6) {
   position: relative;
-  width: 200vw;
   overflow: hidden;
 }
 /* scroll overflow right */
@@ -138,10 +169,13 @@ section:nth-of-type(6) article:nth-last-of-type(3) {
   bottom: 0%;
   left: 60%;
 }
+section:nth-of-type(6) article {
+overflow: hidden;
+
+}
 section:nth-of-type(6) article div{
   position: absolute;
   bottom: 0;
-  width: 100%;
   background-color: rgba(255, 0, 0, 0.5);
 }
 
